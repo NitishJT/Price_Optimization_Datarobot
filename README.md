@@ -75,12 +75,8 @@ Predict and Optimize:
 
 The application uses the DataRobot Deployment API to predict occupancy for each price point.
 Revenue is calculated as:
-Revenue
-=
-Predicted Occupancy
-×
-Price
-Revenue=Predicted Occupancy×Price
+
+Max_Revenue=Predicted Occupancy×Price(Optimal Price)
 The optimal price point (maximizing revenue) is identified for each date.
 Output Results:
 
@@ -103,10 +99,8 @@ Download the results from the saved CSV file (final_max_revenue.csv).
 Example CSV Format
 Here is an example format for the historical data file:
 
-Date	DayOfWeek	IsWeekend	Event	CompetitorPrice	Price
-2023-11-01	3	0	0	120.5	100
-2023-11-02	4	0	0	125.0	105
-2023-11-03	5	1	1	150.0	130
+![alt text](image.png)
+
 Key Files
 app.py: Main application code.
 .env: Stores API credentials (ignored in version control).
