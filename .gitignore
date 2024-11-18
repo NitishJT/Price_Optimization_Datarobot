@@ -1,0 +1,8 @@
+# Ignore virtual environment
+venv/
+
+# Ignore environment variables file
+.env
+
+# Ignore input files directory
+input_files/
